@@ -9,16 +9,19 @@
    <title>register form</title>
 
    <!-- custom css file link  -->
-   <link  href="<s:url value = '/css/style.css' />" rel="stylesheet" type="text/css"> 
+   <link  rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/resources/css/style.css"> 
    
 </head>
 <body>
    
+        
 <div class="form-container">
 
    <form action="" method="post">
       <h3>register now</h3>
-
+      
+ 
+     
       <input type="text" name="name" required placeholder="enter your name">
       <input type="email" name="email" required placeholder="enter your email">
       <input type="password" name="password" required placeholder="enter your password">
@@ -28,7 +31,7 @@
          <option value="admin">admin</option>
       </select>
       <input type="submit" name="submit" value="register now" class="form-btn">
-      <p>already have an account? <a href="login_form.html">login now</a></p>
+      <p>already have an account? <a href="<%=application.getContextPath()%>/login">login now</a></p>
    </form>
 
 </div>
