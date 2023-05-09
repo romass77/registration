@@ -9,8 +9,8 @@
    <title>register form</title>
 
    <!-- custom css file link  -->
-   <link rel="stylesheet" href="css/style.css">
-
+   <link  href="<s:url value = '/css/style.css' />" rel="stylesheet" type="text/css"> 
+   
 </head>
 <body>
    
