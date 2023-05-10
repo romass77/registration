@@ -17,18 +17,20 @@ public class Form {
     private String name;
     private String email;
     private String password;
-    private String user_type;
+    private String type;
 
     public Form() {
     }
 
-    public Form(Integer id, String name, String email, String password, String user_type) {
+    public Form(Integer id, String name, String email, String password, String type) {
         this.id = id;
         this.name = name;
         this.email = email;
         this.password = password;
-        this.user_type = user_type;
+        this.type = type;
     }
+
+    
 
     public Integer getId() {
         return id;
@@ -62,18 +64,18 @@ public class Form {
         this.password = password;
     }
 
-    public String getUser_type() {
-        return user_type;
+    public String getType() {
+        return type;
     }
 
-    public void setUser_type(String user_type) {
-        this.user_type = user_type;
+    public void setType(String type) {
+        this.type = type;
     }
 
     @Override
     public int hashCode() {
         int hash = 7;
-        hash = 59 * hash + Objects.hashCode(this.id);
+        hash = 71 * hash + Objects.hashCode(this.id);
         return hash;
     }
 
@@ -94,9 +96,7 @@ public class Form {
 
     @Override
     public String toString() {
-        return "RLForm{" + "id=" + id + ", name=" + name + ", email=" + email + ", password=" + password + ", user_type=" + user_type + '}';
+        return "Form{" + "id=" + id + ", name=" + name + ", email=" + email + ", password=" + password + ", type=" + type + '}';
     }
     
-    
-
 }

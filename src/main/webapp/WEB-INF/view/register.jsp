@@ -32,6 +32,8 @@
       </select>
       <input type="submit" name="submit" value="register now" class="form-btn">
       <p>already have an account? <a href="<%=application.getContextPath()%>/login">login now</a></p>
+      
+        <a href="<%=application.getContextPath()%>/register/users_list">Users list</a>
    </form>
 
 </div>

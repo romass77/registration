@@ -9,6 +9,6 @@
         <h1>Registration</h1>
         <a href="<%=application.getContextPath()%>/register">Register form</a><br>
         <a href="<%=application.getContextPath()%>/login">Login form</a><br>
-        <a href="<%=application.getContextPath()%>/list">list</a>
+        <a href="<%=application.getContextPath()%>/register/users_list">Users list</a>
     </body>
 </html>
